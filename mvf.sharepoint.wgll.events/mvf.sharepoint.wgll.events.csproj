@@ -52,8 +52,12 @@
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Constants.cs" />
     <Compile Include="Classes\SPLogger.cs" />
     <Compile Include="EventReceviers\FileAdded\FileAdded.cs" />
+    <Compile Include="Features\EventReceivers\EventReceivers.EventReceiver.cs">
+      <DependentUpon>EventReceivers.feature</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
